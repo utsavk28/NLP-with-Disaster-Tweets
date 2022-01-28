@@ -62,5 +62,5 @@ if __name__ == "__main__":
     y_train = np.load(f'{OUTPUT_PATH}/y_train.npy')
     y_val = np.load(f'{OUTPUT_PATH}/y_val.npy')
     y_test = np.load(f'{OUTPUT_PATH}/y_test.npy')
-    run_experiment(X_train, X_val, X_test, y_train, y_val, y_test, experiment)
-    run_experiment(X_train, X_val, X_test, y_train, y_val, y_test, experiment, model_no)
+    # run_experiment(X_train, X_val, X_test, y_train, y_val, y_test, experiment)
+    run_experiment_seq(X_train, X_val, X_test, y_train, y_val, y_test, experiment, model_no)
